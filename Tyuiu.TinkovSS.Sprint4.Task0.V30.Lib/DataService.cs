@@ -1,6 +1,4 @@
-﻿using System;
-using tyuiu.cources.programming.interfaces;
-using tyuiu.cources.programming.interfaces.Sprint4;
+﻿using tyuiu.cources.programming.interfaces.Sprint4;
 
 namespace Tyuiu.TinkovSS.Sprint4.Task0.V30.Lib
 {

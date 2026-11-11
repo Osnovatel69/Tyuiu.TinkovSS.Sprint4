@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Tyuiu.TinkovSS.Sprint4.Task0.V30.Lib;
+
+using Miusing Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.TinkovSS.Sprint4.Task0.V30.Lib;
 
 namespace Tyuiu.TinkovSS.Sprint4.Task0.V30.Test
@@ -10,10 +12,12 @@ namespace Tyuiu.TinkovSS.Sprint4.Task0.V30.Test
         public void ValidGetSumEvenArrEl()
         {
             DataService ds = new DataService();
-            int[] array = { 9, 8, 4, 6, 9, 4, 3, 6, 1, 2 };
 
+            int[] numsArray = { 9, 8, 4, 6, 9, 4, 3, 6, 1, 2 };
+            int res = ds.GetSumEvenArrEl(numsArray);
+
+            // Четные элементы: 8 + 4 + 6 + 4 + 6 + 2 = 30
             int wait = 30;
-            int res = ds.GetSumEvenArrEl(array);
 
             Assert.AreEqual(wait, res);
         }
