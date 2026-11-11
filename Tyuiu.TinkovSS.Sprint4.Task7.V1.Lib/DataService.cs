@@ -16,7 +16,7 @@ namespace Tyuiu.TinkovSS.Sprint4.Task7.V1.Lib
                 {
                     // Заполняем матрицу цифрами из строки: символ преобразуем в число
                     matrix[i, j] = int.Parse(value[i * m + j].ToString());
-
+                    
                     // Проверяем на четность
                     if (matrix[i, j] % 2 == 0)
                     {
